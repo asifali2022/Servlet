@@ -26,8 +26,10 @@ public class AlterWordFilter  implements Filter {
 		
 		HttpServletRequest hreq=(HttpServletRequest)request;
 		CustomizedRequest creq=new CustomizedRequest(hreq);
-		
+		System.out.println("before filter");
 		chain.doFilter(creq, response);
+		System.out.println("after filter");
+		
 	}
 
 	
